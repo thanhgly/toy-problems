@@ -49,7 +49,7 @@ function search(nums: number[], target: number): number {
 //   if target > curEl
 //     left = mid + 1
 //   else if target < curEl
-//     right = mid
+//     right = mid - 1
 //   otherwise
 //     return mid;
 // return -1
