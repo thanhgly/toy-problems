@@ -9,18 +9,18 @@ function search(nums: number[], target: number): number {
   let left: number = 0;
   let right: number = nums.length - 1;
 
-  while (left <= right) {
-    let mid: number = Math.floor((left + right) / 2);
-    let curEl: number = nums[mid];
+  while (left < right) {
+    let mid = Math.floor((left + right) / 2);
+    let curEl = nums[mid];
     if (target > curEl) {
       left = mid + 1;
     } else if (target < curEl) {
-      right = mid - 1;
+      right = mid;
     } else {
       return mid;
     }
   }
-  return -1;
+  return nums[left] === target ? left : -1;
 };
 // @lc code=end
 
