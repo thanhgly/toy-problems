@@ -22,7 +22,7 @@
 function isBalanced(root: TreeNode | null): boolean {
   const dfs = (node: TreeNode): [boolean, number] => {
     if (node === null) {
-      return [true, 0];
+      return [true, -1];
     }
 
     const left = dfs(node.left);
