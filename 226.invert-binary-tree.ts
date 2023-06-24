@@ -35,7 +35,7 @@ function invertTree(root: TreeNode | null): TreeNode | null {
     invertTree(root.right);
   }
   return root;
-};
+}
 // @lc code=end
 
 // O: Binary Tree

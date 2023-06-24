@@ -4,7 +4,7 @@
  * [235] Lowest Common Ancestor of a Binary Search Tree
  */
 
-import { count } from "console"
+import { count } from "console";
 
 // @lc code=start
 /**
@@ -21,8 +21,12 @@ import { count } from "console"
  * }
  */
 
-function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: TreeNode | null): TreeNode | null {
-	let current = root;
+function lowestCommonAncestor(
+  root: TreeNode | null,
+  p: TreeNode | null,
+  q: TreeNode | null
+): TreeNode | null {
+  let current = root;
   while (current !== null) {
     if (current.val === p.val || current.val === q.val) {
       return current;
@@ -43,7 +47,7 @@ function lowestCommonAncestor(root: TreeNode | null, p: TreeNode | null, q: Tree
     }
   }
   return root;
-};
+}
 // @lc code=end
 
 // O: TreeNode

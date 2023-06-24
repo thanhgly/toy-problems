@@ -17,7 +17,10 @@
  * }
  */
 
-function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode | null {
+function mergeTwoLists(
+  list1: ListNode | null,
+  list2: ListNode | null
+): ListNode | null {
   const mergedList: ListNode = new ListNode();
   let tail = mergedList;
 
@@ -40,7 +43,7 @@ function mergeTwoLists(list1: ListNode | null, list2: ListNode | null): ListNode
   }
 
   return mergedList.next;
-};
+}
 // @lc code=end
 
 // O: Linked List

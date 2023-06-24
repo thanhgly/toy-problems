@@ -30,7 +30,10 @@
 
 // Recursive version
 function reverseList(head: ListNode | null): ListNode | null {
-  function reverse(node: ListNode | null, prev: ListNode | null): ListNode | null {
+  function reverse(
+    node: ListNode | null,
+    prev: ListNode | null
+  ): ListNode | null {
     if (node === null) {
       return prev;
     }
@@ -38,10 +41,10 @@ function reverseList(head: ListNode | null): ListNode | null {
     const next = node.next;
     node.next = prev;
     return reverse(next, node);
-  };
+  }
 
   return reverse(head, null);
-};
+}
 // @lc code=end
 
 /**

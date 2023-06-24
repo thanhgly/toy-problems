@@ -4,7 +4,8 @@
   "description": "Test file for the toy problems",
   "main": "tp.specs.js",
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "format": "prettier --config .prettierrc '*ts' --write"
   },
   "author": "",
   "license": "UNLICENSED",

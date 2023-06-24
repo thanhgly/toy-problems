@@ -30,9 +30,9 @@ function isBalanced(root: TreeNode | null): boolean {
     const balanced = left[0] && right[0] && Math.abs(left[1] - right[1]) <= 1;
 
     return [balanced, 1 + Math.max(left[1], right[1])];
-  }
+  };
   return dfs(root)[0];
-};
+}
 // @lc code=end
 
 // O: boolean
@@ -49,4 +49,3 @@ function isBalanced(root: TreeNode | null): boolean {
 //   declare balanced = left[0] && right[0] && abs(left[1] - right[1]) <= 1
 //   return [balanced, 1 + max(left[1], right[1])]
 // return dfs(root)[0]
-

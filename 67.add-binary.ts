@@ -6,16 +6,15 @@
 
 // @lc code=start
 function addBinary(a: string, b: string): string {
-
-  let result = '';
+  let result = "";
   let carry = 0;
 
   let i = a.length - 1;
   let j = b.length - 1;
 
-  while (i > -1 || j > -1 ) {
-    let digitA = (i < 0) ? 0 : parseInt(a[i]);
-    let digitB = (j < 0) ? 0 : parseInt(b[j]);
+  while (i > -1 || j > -1) {
+    let digitA = i < 0 ? 0 : parseInt(a[i]);
+    let digitB = j < 0 ? 0 : parseInt(b[j]);
     let total = digitA + digitB + carry;
     let char = total % 2;
     result = char + result;
@@ -25,7 +24,7 @@ function addBinary(a: string, b: string): string {
   }
 
   return carry ? carry + result : result;
-};
+}
 // @lc code=end
 
 /**

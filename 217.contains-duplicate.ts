@@ -8,15 +8,15 @@ import { boolean } from "yargs";
 
 // @lc code=start
 function containsDuplicate(nums: number[]): boolean {
-  const visited: {[k:string]: string} = {};
+  const visited: { [k: string]: string } = {};
   for (let num of nums) {
     if (visited[num]) {
       return true;
     }
-    visited[num] = 'exist';
+    visited[num] = "exist";
   }
   return false;
-};
+}
 // @lc code=end
 
 /**

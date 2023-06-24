@@ -35,7 +35,7 @@ function climbStairs(n: number): number {
   }
 
   return one;
-};
+}
 // @lc code=end
 
 // O: number

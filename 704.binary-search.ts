@@ -21,7 +21,7 @@ function search(nums: number[], target: number): number {
     }
   }
   return nums[left] === target ? left : -1;
-};
+}
 // @lc code=end
 
 // O: number

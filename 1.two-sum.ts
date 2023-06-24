@@ -15,6 +15,5 @@ function twoSum(nums: number[], target: number): number[] {
     visited[nums[i]] = i;
   }
   return [];
-};
+}
 // @lc code=end
-

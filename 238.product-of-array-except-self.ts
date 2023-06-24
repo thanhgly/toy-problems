@@ -6,7 +6,9 @@
 
 // @lc code=start
 function productExceptSelf(nums: number[]): number[] {
-  let prefix = 1, postfix = 1, index = nums.length - 1;
+  let prefix = 1,
+    postfix = 1,
+    index = nums.length - 1;
   return nums
     .map((num: number, idx: number): number => {
       let temp = prefix;
@@ -21,7 +23,7 @@ function productExceptSelf(nums: number[]): number[] {
       return temp;
     })
     .reverse();
-};
+}
 // @lc code=end
 
 // input    [ 1| 2| 3| 4]

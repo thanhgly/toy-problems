@@ -38,6 +38,5 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
   }
   dfs(root);
   return result;
-};
+}
 // @lc code=end
-

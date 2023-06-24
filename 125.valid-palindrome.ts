@@ -26,7 +26,7 @@ function isPalindrome(s: string): boolean {
     endIdx--;
   }
   return true;
-};
+}
 // @lc code=end
 
 // O: boolean

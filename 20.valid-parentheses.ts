@@ -6,9 +6,9 @@
 
 // @lc code=start
 const bracketMapping: object = {
-  ')': '(',
-  ']': '[',
-  '}': '{'
+  ")": "(",
+  "]": "[",
+  "}": "{",
 };
 
 function isValid(s: string): boolean {
@@ -27,6 +27,5 @@ function isValid(s: string): boolean {
     }
   }
   return stack.length === 0;
-};
+}
 // @lc code=end
-

@@ -31,7 +31,7 @@ function hasCycle(head: ListNode | null): boolean {
     slow = slow.next;
   }
   return false;
-};
+}
 // @lc code=end
 
 // O: boolean

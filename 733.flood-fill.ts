@@ -5,11 +5,15 @@
  */
 
 // @lc code=start
-function floodFill(image: number[][], sr: number, sc: number, color: number): number[][] {
-
+function floodFill(
+  image: number[][],
+  sr: number,
+  sc: number,
+  color: number
+): number[][] {
   if (image[sr][sc] === color) {
     return image;
-   }
+  }
 
   let tmp = image[sr][sc];
   image[sr][sc] = color;
@@ -30,11 +34,11 @@ function floodFill(image: number[][], sr: number, sc: number, color: number): nu
     image = floodFill(image, sr, sc - 1, color);
   }
   return image;
-};
+}
 
 function isInBound(num: number, limit: number): boolean {
   return num > -1 && num < limit;
-};
+}
 // @lc code=end
 
 // O: array of arrays of numbers

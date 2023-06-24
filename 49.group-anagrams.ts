@@ -9,9 +9,11 @@
 // Count char approach (Time: O(n*m) Space: O(n))
 function groupAnagrams(strs: string[]): string[][] {
   const result: Map<string, string[]> = new Map();
-  strs.forEach(str => { // O(n) time
+  strs.forEach((str) => {
+    // O(n) time
     const count = new Array(26).fill(0); // a-z O(26) time
-    for (let c of str) { // O(m) time
+    for (let c of str) {
+      // O(m) time
       count[c.charCodeAt(0) - 97] += 1;
     }
     const key = count.toString(); // O(26)
@@ -22,7 +24,7 @@ function groupAnagrams(strs: string[]): string[][] {
     }
   });
   return [...result.values()]; // O(n)
-};
+}
 
 // Sorting Approach (Time: O(m.n.logn) Space: O(m))
 // countChar takes a string and sort it

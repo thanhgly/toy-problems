@@ -10,7 +10,7 @@ function canConstruct(ransomNote: string, magazine: string): boolean {
     return false;
   }
 
-  const magazineLetterCounts: {[k:string]: number} = {};
+  const magazineLetterCounts: { [k: string]: number } = {};
 
   for (let char of magazine) {
     if (magazineLetterCounts[char] === undefined) {
@@ -33,7 +33,7 @@ function canConstruct(ransomNote: string, magazine: string): boolean {
   }
 
   return true;
-};
+}
 // @lc code=end
 
 // O: boolean

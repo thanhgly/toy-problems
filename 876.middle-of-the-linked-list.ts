@@ -22,12 +22,12 @@ function middleNode(head: ListNode | null): ListNode | null {
   let mid = head;
   let cur = head;
   while (cur !== null) {
-    mid = (counter % 2 !== 0) ? mid.next : mid;
+    mid = counter % 2 !== 0 ? mid.next : mid;
     counter++;
     cur = cur.next;
   }
   return mid;
-};
+}
 
 // function middleNode(head: ListNode | null): ListNode | null {
 //   const nodes: ListNode[] = [];

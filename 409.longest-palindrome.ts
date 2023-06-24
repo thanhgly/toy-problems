@@ -6,7 +6,7 @@
 
 // @lc code=start
 function longestPalindrome(s: string): number {
-  const counts: {[k:string]: number} = {};
+  const counts: { [k: string]: number } = {};
   let longestPalindromeLength = 0;
   let hasOdd = false;
 
@@ -19,12 +19,12 @@ function longestPalindrome(s: string): number {
       longestPalindromeLength += counts[c];
     } else {
       hasOdd = true;
-      longestPalindromeLength += (counts[c] - 1);
+      longestPalindromeLength += counts[c] - 1;
     }
   }
 
   return hasOdd ? longestPalindromeLength + 1 : longestPalindromeLength;
-};
+}
 // @lc code=end
 
 // O: number

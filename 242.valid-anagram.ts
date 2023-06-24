@@ -30,7 +30,7 @@ function isAnagram(s: string, t: string): boolean {
     }
   }
   return Object.keys(counts).length === 0;
-};
+}
 // @lc code=end
 
 // O: boolean

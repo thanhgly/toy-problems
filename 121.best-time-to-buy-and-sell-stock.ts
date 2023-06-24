@@ -22,7 +22,7 @@ function maxProfit(prices: number[]): number {
     }
   }
   return maxP;
-};
+}
 // @lc code=end
 
 // O: number

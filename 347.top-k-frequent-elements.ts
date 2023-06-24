@@ -6,24 +6,21 @@
 
 // @lc code=start
 function topKFrequent(nums: number[], k: number): number[] {
-
   const result: number[] = [];
 
   const freq = new Map<number, number>();
-  nums.forEach(num => {
+  nums.forEach((num) => {
     freq.set(num, (freq.get(num) || 0) + 1);
   });
 
-  const freqTuple: number[][] = Array.from(freq)
-    .sort((a, b) => b[1] - a[1]);
+  const freqTuple: number[][] = Array.from(freq).sort((a, b) => b[1] - a[1]);
 
   for (let i = 0; i < k; i++) {
     result.push(freqTuple[i][0]);
   }
   return result;
-};
+}
 // @lc code=end
-
 
 /**
  * O: array of number
